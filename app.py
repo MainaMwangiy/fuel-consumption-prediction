@@ -1,7 +1,7 @@
 #import libraries
 import numpy as np
 from flask import Flask, render_template,request
-import pickle#Initialize the flask App
+from pickle4 import pickle
 app = Flask(__name__)
 model = pickle.load(open('model.pkl', 'rb'))
 
